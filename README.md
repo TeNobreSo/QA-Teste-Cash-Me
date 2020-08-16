@@ -21,6 +21,15 @@ Quando adicionar uma lista no quadro com nome "to do"
 Então o usuário criou uma lista no quadro com nome "to do"
 
 ```
+*Funcionalidade: Cartão*
+
+```
+Cenário: Criar um cartão
+Dado que o usuário deseja criar um cartão 
+Quando criar o cartão para a lista "To do"
+Então o cartão é criado com sucesso na lista "To do" 
+
+```
 
 *Funcionalidade: Convidar*
 
@@ -32,12 +41,4 @@ Então outros membros são adicionados ao quadro
 
 ```
 
-*Funcionalidade: Cartão*
 
-```
-Cenário: Mover um cartão
-Dado que o usuário deseja mover um cartão 
-Quando mover o cartão para a lista de atividades finalizadas
-Então o cartão é finalizado 
-
-```
