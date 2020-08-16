@@ -25,9 +25,9 @@ Então o usuário criou uma lista no quadro com nome "to do"
 
 ```
 Cenário: Criar um cartão
-Dado que o usuário deseja criar um cartão 
-Quando criar o cartão para a lista "To do"
-Então o cartão é criado com sucesso na lista "To do" 
+Dado que o usuário deseja criar um cartão com nome "Atividade 1"
+Quando criar o cartão numa lista
+Então o cartão "Atividade 1" é criado com sucesso na lista 
 
 ```
 
