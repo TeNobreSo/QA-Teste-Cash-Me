@@ -7,10 +7,11 @@ describe('Teste Trello',() =>{
         cy.get('input[id="login"]').click()
     })
 
-    it('Validar criação do quadro com nome Quadro de teste', () => {
+    it('Criação do quadro com nome Quadro de teste', () => {
         cy.get('div[class = "board-tile mod-add"]').click()
-        cy.contains('Adicionar outra lista').click()
-        cy.get('input[class="list-name-inpu')
+        cy.get('input[class="subtle-input"]').type('Quadro de teste')
+        cy.get('button[class="button primary"]').click()
+        cy.get('h1[class="js-board-editing-target board-header-btn-text"]').contains('Quadro de teste')
     })
     
    
