@@ -1,9 +1,6 @@
 describe('Teste Trello',() =>{
-    before(() => {
+    beforeEach(() => {
         cy.visit('https://trello.com/') 
-    })
-
-    it('Usuário está logado',() => {
         cy.get('a[class="btn btn-sm btn-link text-white"]').click()
         cy.get('input[id="user"]').type('teste.tereza@teste.com')
         cy.get('input[id="password"]').type('Teste123')
