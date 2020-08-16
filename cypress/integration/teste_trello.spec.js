@@ -20,12 +20,12 @@ describe('Teste Trello',() =>{
         cy.get('input[class="list-name-input"]').type('To do')
         cy.get('input[class="primary mod-list-add-button js-save-edit"]').click()
         cy.get('h2[class="list-header-name-assist js-list-name-assist"]').contains('To do')
-    })
+    }) 
 
     it('Validar criação do cartão com nome Atividade 1', () => {
         cy.get('div[title="Quadro de teste"]').click()
-        var lista = cy.get('div[class="list js-list-content"]').contains('To do')
-        lista.get('span[class="js-add-a-card"]').click()
+        cy.contains('To do').parent('div').parent('div')
+        .get('a[class="open-card-composer js-open-card-composer"]').click({ multiple: true })
         cy.get('textarea[class="list-card-composer-textarea js-card-title"]').type('Atividade 1')
         cy.get('input[value="Adicionar Cartão"]').click()
         cy.contains('Atividade 1')
