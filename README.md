@@ -3,7 +3,8 @@ Repositório para realização do teste para vaga de QA na Cash Me.
 
 ## Plano de teste:
 
-*Funcionalidade: Quadro*
+*Objetivo do teste: criar um quadro*
+*Critério de conclusão: usuário conseguir criar o quadro com o nome definido*
 ```
 Cenário: Criar um quadro
 Dado que o usuário está logado
