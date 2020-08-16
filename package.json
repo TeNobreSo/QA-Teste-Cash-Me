@@ -1,0 +1,27 @@
+{
+  "name": "qa-teste-cash-me",
+  "version": "1.0.0",
+  "description": "\"cypress para testar o Trello\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerezaAlmeida/QA-Teste-Cash-Me.git"
+  },
+  "keywords": [
+    "cypressTrello"
+  ],
+  "author": "Tereza Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TerezaAlmeida/QA-Teste-Cash-Me/issues"
+  },
+  "homepage": "https://github.com/TerezaAlmeida/QA-Teste-Cash-Me#readme",
+  "dependencies": {
+    "cypress": "^4.12.1"
+  }
+}
